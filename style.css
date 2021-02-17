@@ -1,0 +1,19 @@
+
+
+.feed{
+    height: 70px;
+    background-color: lightgray;
+    padding: 20px;
+}
+
+.feed-btn{
+    
+    padding: 10px 15px 10px 15px;
+    color: white;
+    border-radius: 10px;
+    
+   
+    background: gray;
+}
+
+
