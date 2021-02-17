@@ -4,17 +4,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
-     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cookie&family=Norican&display=swap" rel="stylesheet">
+
     <title>Document</title>
 </head>
 
 <body>
 
     <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
-        <a class="navbar-brand" href="#"><i class="bi bi-instagram"></i></a>
+        <a class="navbar-brand" href="#"><i class="bi bi-instagram"></i><span class="logo">Instagram</span></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -43,30 +48,118 @@
         </div>
     </nav>
 
- 
-        <div class="row feed justify-content-center">
-            <div class="col  text-center bg-gray feeds">
-                <a  href=""><i  class="bi bi-app feed-btn"></i></a>
-                <a  href=""><i class="bi bi-grid-3x2 feed-btn"></i></a>
+
+    <div class="row">
+
+        <div class="col-12  bg-white p-2">
+
+            <ul class="nav nav-pills justify-content-center" id="pills-tab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab"
+                        aria-controls="pills-home" aria-selected="true"><i class="bi bi-grid-3x3-gap"></i></a>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab"
+                        aria-controls="pills-profile" aria-selected="false"><i class="bi bi-app"></i></a>
+                </li>
+            </ul>
+
+
+        </div>
+
+
+
+    </div>
+
+
+    <div class="tab-content" id="pills-tabContent">
+        <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+            <div id="multiple" class="container">
+                <div class="row">
+                    <div class="col-12 col-sm-6 col-lg-3 p-1">
+                        <img class="w-100"
+                            src="https://images.pexels.com/photos/1108099/pexels-photo-1108099.jpeg?cs=srgb&dl=pexels-chevanon-photography-1108099.jpg&fm=jpg"
+                            alt="">
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-3 p-1">
+                        <img class="w-100"
+                            src="https://images.pexels.com/photos/1108099/pexels-photo-1108099.jpeg?cs=srgb&dl=pexels-chevanon-photography-1108099.jpg&fm=jpg"
+                            alt="">
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-3 p-1">
+                        <img class="w-100"
+                            src="https://images.pexels.com/photos/1108099/pexels-photo-1108099.jpeg?cs=srgb&dl=pexels-chevanon-photography-1108099.jpg&fm=jpg"
+                            alt="">
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-3 p-1">
+                        <img class="w-100"
+                            src="https://images.pexels.com/photos/1108099/pexels-photo-1108099.jpeg?cs=srgb&dl=pexels-chevanon-photography-1108099.jpg&fm=jpg"
+                            alt="">
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-3 p-1">
+                        <img class="w-100"
+                            src="https://images.pexels.com/photos/1108099/pexels-photo-1108099.jpeg?cs=srgb&dl=pexels-chevanon-photography-1108099.jpg&fm=jpg"
+                            alt="">
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-3 p-1">
+                        <img class="w-100"
+                            src="https://images.pexels.com/photos/1108099/pexels-photo-1108099.jpeg?cs=srgb&dl=pexels-chevanon-photography-1108099.jpg&fm=jpg"
+                            alt="">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+            <div id="single" class="container my-2">
+                <div class="row">
+                    <div class="col-sm-6 mx-auto post">
+                        <div class="header-post">
+                            <h2>My first photo</h2>
+                            <p class="ml-auto post-number"> 1/1</p>
+                        </div>
+                        <div class="single-photo ">
+                            <img src="https://images.pexels.com/photos/1108099/pexels-photo-1108099.jpeg?cs=srgb&dl=pexels-chevanon-photography-1108099.jpg&fm=jpg"
+                                alt="">
+                        </div>
+
+                        <div class="footer-post">
+
+                            <div>
+                                <strong> 9999 Likes</strong>
+                            </div>
+
+                            <div>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis eligendi cum quisquam
+                                aspernatur harum, doloribus a. Officiis sit ullam ducimus sequi ab quibusdam amet? Sit
+                                at velit
+                                voluptatibus quis autem.
+                            </div>
+
+                            <div class="comment">
+                                <i class="bi bi-heart"></i>
+                                <p class="single-comment">Comment....</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
 
-        <div class="container">
-            
-        </div>
-       
+    </div>
 
 
 
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
         crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
 </body>
 

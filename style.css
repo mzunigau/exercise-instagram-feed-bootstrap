@@ -1,8 +1,16 @@
-
+body{
+    background: lightgray;
+}
+.logo
+{
+    font-family: 'Norican', cursive;
+    font-size: 25px;
+    margin-left: 3px;
+}
 
 .feed{
     height: 70px;
-    background-color: lightgray;
+    background-color: white;
     padding: 20px;
 }
 
@@ -16,4 +24,49 @@
     background: gray;
 }
 
+.header-post{
+    display: flex;
+    padding: 10px;
+}
 
+.post-number{
+    font-size: 20px;
+}
+
+.photofeed{
+    width: 200p;
+    border: solid 1px red;
+}
+
+.feedimage{
+    width: 400px;
+}
+
+.single{
+    background-color: white;
+    border-radius: 5px;
+}
+
+.post{
+    background: white;
+    padding: 0;
+    margin: 0;
+}
+.single-photo img{
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.footer-post{
+    padding: 10px;
+}
+
+.comment{
+    margin-top: 5px;
+    display: flex;
+}
+
+.single-comment{
+    margin-left: 10px;
+}
